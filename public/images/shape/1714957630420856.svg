@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.707" height="33.707" viewBox="0 0 33.707 33.707">
+  <g id="shape-unknow2" transform="translate(0.354 0.354)">
+    <g id="Group_9851" data-name="Group 9851" transform="translate(0 0)">
+      <rect id="Rectangle_803" data-name="Rectangle 803" width="23.335" height="23.335" transform="translate(16.5) rotate(45)" stroke-width="0.5" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <rect id="Rectangle_804" data-name="Rectangle 804" width="17.007" height="17.007" transform="translate(16.5 4.474) rotate(45)" stroke-width="0.5" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line id="Line_180" data-name="Line 180" y2="4.474" transform="translate(16.5 0)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <line id="Line_181" data-name="Line 181" x1="4.474" transform="translate(28.526 16.5)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <line id="Line_182" data-name="Line 182" y1="4.474" transform="translate(16.5 28.526)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+      <line id="Line_183" data-name="Line 183" x2="4.474" transform="translate(0 16.5)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    </g>
+    <line id="Line_184" data-name="Line 184" x2="2.272" y2="2.203" transform="translate(8.563 7.937)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    <line id="Line_185" data-name="Line 185" x1="2.326" y1="2.095" transform="translate(22.346 22.733)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    <line id="Line_186" data-name="Line 186" x1="2.351" y2="2.123" transform="translate(22.242 8.093)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    <line id="Line_187" data-name="Line 187" y1="2.203" x2="2.272" transform="translate(8.298 22.595)" fill="none" stroke="#848484" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+  </g>
+</svg>
