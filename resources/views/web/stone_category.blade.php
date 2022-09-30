@@ -15,7 +15,7 @@ p.text-category-x {
 }
 
 
-  
+
 </style>
 
 
@@ -29,7 +29,7 @@ p.text-category-x {
   @if($category_filter == null)
   <div class="page-name lst-active-name text-uppercase">All</div>
   @else
-  
+
   <div class="page-name lst-active-name text-uppercase">{{$category_filter->category_name}}</div>
   @endif
 
@@ -45,17 +45,17 @@ p.text-category-x {
 
   <div class="banner-main-txt-wrap catergory-banner-main-wrap">
     <div class="main-head-wrap">
-     
+
 
       <h1 class="txt-white"></h1>
 
-  
+
     </div>
     <div class="banner-descript-wrap catergory-banner-descripion">
-    
-    
+
+
     <p class="paraf1 txt-white"></p>
-   
+
     </div>
   </div>
 
@@ -68,17 +68,17 @@ p.text-category-x {
 
   <div class="banner-main-txt-wrap catergory-banner-main-wrap">
     <div class="main-head-wrap">
-     
+
 
       <h1 class="txt-white">{{$category_filter->category_name}}</h1>
 
-  
+
     </div>
     <div class="banner-descript-wrap catergory-banner-descripion">
-    
-    
+
+
     <p class="paraf1 txt-white">{{$category_filter->category_description}}</p>
-   
+
     </div>
   </div>
 
@@ -131,18 +131,18 @@ p.text-category-x {
 
 
       <div class="row mobile-category-raw">
-      
+
         <div class="col-md-12" id="mobile-head-section">
            <select class="form-control sorting-select" id="select_byy">
               <option selected disabled hidden>Sort by Weight</option>
               <option  value="Newest">Max to Min</option>
               <option  value="Weight">Min to Max</option>
-              
+
 
             </select>
-       
+
           <a class="text-uppercase float-right sidebar-title side-bar-clear-link" id="selectt"  style="cursor: pointer;">Clear All</a>
-          
+
         </div>
 
         <div class="mobile-text-print">
@@ -150,11 +150,11 @@ p.text-category-x {
         <p class="new-class-id" id="neww"></p>
         <p class="new-class-id" id="short-neww"></p>
 
-        
+
         </div>
 
-        
-        
+
+
         <div class="col-12">
           <div class="category-wrap">
 
@@ -163,16 +163,16 @@ p.text-category-x {
                 <p class="sidebar-main-category-names sidebar-title">Category</p>
               </div>
               <div class="categoryname-list-wrap main-category-list-wrap">
-             
+
               <ul class="pl-0 mobile-category-list">
 
 
-                
-          
+
+
 
                 @foreach($categorys as $category)
 
-                
+
                   <li class="category-calss-new">
 
                   <div class="shape-style-wrap">
@@ -184,28 +184,28 @@ p.text-category-x {
                    </label>
 
                 <div class="shape-name-wrap">
-                
-                        <p class="mb-0"> {{$category->category_name}}</p>
-                        
-                     
-                </div>
-                    
-                  
-                   
-               </div>
-                
-                
-                
-                </li>
-               
 
-               
-                
+                        <p class="mb-0"> {{$category->category_name}}</p>
+
+
+                </div>
+
+
+
+               </div>
+
+
+
+                </li>
+
+
+
+
 
                 @endforeach
-                
+
               </ul>
-              
+
             </div>
 
             </div>
@@ -215,10 +215,10 @@ p.text-category-x {
                 <p class="sidebar-title">Availability</p>
               </div>
               <div class="categoryname-list-wrap available-list-wrap main-category-list-wrap">
-              
+
               <ul class="pl-0">
                 @foreach($availabilitys as $availability)
-                
+
 
                   <li class="category-calss-new">
 
@@ -241,7 +241,7 @@ p.text-category-x {
 
                   @endforeach
               </ul>
-             
+
             </div>
 
             </div>
@@ -255,16 +255,16 @@ p.text-category-x {
 
               @foreach($colors as $color)
               <ul class="pl-0">
-              
-               
+
+
                 <div class="color-codes-wrap" style="background:{{ $color->color_code }};">
                   <input type="checkbox" id="COLORS: {{ $color->color_name }}" name="color_name" id="checkbox" class="color_namee" value="{{$color->id}}" >
 
                   <span class="checkmark"></span>
                 </div>
 
-             
-              
+
+
 
 
 
@@ -292,7 +292,7 @@ p.text-category-x {
 
 
               <ul class="pl-0">
-              
+
 
 
                   @foreach($shapes as $shape)
@@ -314,12 +314,12 @@ p.text-category-x {
                     </div>
                   </li>
                   @endforeach
-                  
+
 
 
               </ul>
 
-             
+
             </div>
 
             </div>
@@ -362,21 +362,21 @@ p.text-category-x {
               </div>
               <div class="enhancement-list-wrap main-category-list-wrap">
 
-             
+
 
                 <ul class="pl-0">
                   @foreach($enhancements as $enhancement)
                   <li>
                     <div class="enhancement-style-wrap">
-                     
+
 
                       <label class="container-checkbox">{{$enhancement->enhancement_name}}
                         <input type="checkbox" id="ENHANCEMENTS: {{$enhancement->enhancement_name}}" name="enhancement_filter" value="{{$enhancement->id}}"
                           class="enhancement_filterr">
-                        
+
                         <span class="checkmark"></span>
                       </label>
-                    
+
 
 
                     </div>
@@ -384,7 +384,7 @@ p.text-category-x {
                   @endforeach
                 </ul>
 
-               
+
             </div>
 
             </div>
@@ -412,7 +412,7 @@ p.text-category-x {
 
 
 
-                     
+
                   </div>
                 </li>
 
@@ -420,10 +420,10 @@ p.text-category-x {
 
             </div>
 
-            
 
 
-            
+
+
 
 
               </div>
@@ -449,37 +449,37 @@ p.text-category-x {
           <div class="sidebar-section-1">
             <div class="filterby-txt-wrap">
               <p class="paraf1">Filter by</p>
-              
+
             </div>
             <div class="clearall-txt-wrap">
-            <a class="side-bar-clear-link" id="select"  style="cursor: pointer;">Clear all</a> 
-            
+            <a class="side-bar-clear-link" id="select"  style="cursor: pointer;">Clear all</a>
+
             </div>
 
             <p class="new-class-id" id="data"></p>
             <p class="new-class-id" id="new"></p>
             <p class="new-class-id" id="short-new"></p>
-           
-           
+
+
           </div>
-        
-          
-          
+
+
+
           <div class="sidebar-section-2">
             <div class="categoryname-headtxt-wrap category-head-txt-wrap">
               <p class="sidebar-main-category-names sidebar-title">Category</p>
             </div>
             <div class="categoryname-list-wrap main-category-list-wrap">
-             
+
               <ul class="pl-0">
 
 
-                
-          
+
+
 
                 @foreach($categorys as $category)
 
-                
+
                   <li class="category-calss-new">
 
                   <div class="shape-style-wrap">
@@ -491,51 +491,51 @@ p.text-category-x {
                    </label>
 
                 <div class="shape-name-wrap">
-                
-                        <p class="mb-0"> {{$category->category_name}}</p>
-                        
-                     
-                </div>
-                    
-                  
-                   
-               </div>
-                
-                
-                
-                </li>
-               
 
-               
-                
+                        <p class="mb-0"> {{$category->category_name}}</p>
+
+
+                </div>
+
+
+
+               </div>
+
+
+
+                </li>
+
+
+
+
 
                 @endforeach
-                
+
               </ul>
-              
+
             </div>
 
           </div>
 
 
 
-          
 
 
 
 
-          
+
+
           <div class="sidebar-section-3">
             <div class="available-headtxt-wrap category-head-txt-wrap">
               <p class="sidebar-title">Availability</p>
             </div>
-            
-            <div id="avalable-filter-id">
+
+            <div id="avalable-filter-id-1">
             <div class="categoryname-list-wrap available-list-wrap main-category-list-wrap">
-              
+
               <ul class="pl-0">
                 @foreach($availabilitys as $availability)
-                
+
 
                   <li class="category-calss-new">
 
@@ -558,7 +558,7 @@ p.text-category-x {
 
                  @endforeach
               </ul>
-             
+
             </div>
             </div>
 
@@ -574,16 +574,16 @@ p.text-category-x {
 
               @foreach($colors as $color)
               <ul class="pl-0">
-              
-               
+
+
                 <div class="color-codes-wrap" style="background:{{ $color->color_code }};">
                   <input type="checkbox" id="COLORS: {{ $color->color_name }}" name="color_name" id="checkbox" class="color_name" value="{{$color->id}}" >
 
                   <span class="checkmark"></span>
                 </div>
 
-             
-              
+
+
 
 
 
@@ -613,7 +613,7 @@ p.text-category-x {
 
 
               <ul class="pl-0">
-              
+
 
 
                   @foreach($shapes as $shape)
@@ -635,12 +635,12 @@ p.text-category-x {
                     </div>
                   </li>
                   @endforeach
-                  
+
 
 
               </ul>
 
-             
+
             </div>
             </div>
 
@@ -652,7 +652,7 @@ p.text-category-x {
               <p class="sidebar-title">Clarity</p>
             </div>
 
-            <div id="clarity-filter-id">   
+            <div id="clarity-filter-id">
             <div class="Clarity-list-wrap main-category-list-wrap">
 
 
@@ -686,24 +686,24 @@ p.text-category-x {
             <div class="enhancement-headtxt-wrap category-head-txt-wrap">
               <p class="sidebar-title">Enhancements</p>
             </div>
-            <div id="enhancement-filter-id"> 
+            <div id="enhancement-filter-id">
             <div class="enhancement-list-wrap main-category-list-wrap">
 
-             
+
 
                 <ul class="pl-0">
                   @foreach($enhancements as $enhancement)
                   <li>
                     <div class="enhancement-style-wrap">
-                     
+
 
                       <label class="container-checkbox">{{$enhancement->enhancement_name}}
                         <input type="checkbox" id="ENHANCEMENTS: {{$enhancement->enhancement_name}}" name="enhancement_filter" value="{{$enhancement->id}}"
                           class="enhancement_filter">
-                        
+
                         <span class="checkmark"></span>
                       </label>
-                    
+
 
 
                     </div>
@@ -711,7 +711,7 @@ p.text-category-x {
                   @endforeach
                 </ul>
 
-               
+
             </div>
            </div>
 
@@ -739,7 +739,7 @@ p.text-category-x {
 
 
 
-                     
+
                   </div>
                 </li>
 
@@ -761,7 +761,7 @@ p.text-category-x {
               <option selected disabled hidden>Sort by Weight</option>
               <option  value="Newest">Max to Min</option>
               <option  value="Weight">Min to Max</option>
-              
+
 
             </select>
           </div>
@@ -773,7 +773,7 @@ p.text-category-x {
 
         <div class="products_listing-wrap" id="speakerResponse">
 
-        
+
           <div class="row">
 
             @foreach($stonedata as $value)
@@ -790,10 +790,10 @@ p.text-category-x {
                 <p class="new-text">Reserved</p>
                 @endif
 
-                
+
 
               <img src="{{asset($value->product_image)}}" width="100%" alt="adamant-gem" srcset="">
-              
+
             </a>
 
               </div>
@@ -815,8 +815,8 @@ p.text-category-x {
           </div>
 
           {{ $stonedata->links() }}
-          
-        
+
+
 
 
 
@@ -891,10 +891,10 @@ p.text-category-x {
 
   $(document).ready(function() {
 
-   
 
 
-     
+
+
       $('#select').click(function() {
         $(':checkbox').each(function() {
             this.checked = false;
@@ -903,13 +903,13 @@ p.text-category-x {
             $('#new').text("");
 
             location.reload();
-            
 
-            
+
+
         });
 
 
-       
+
 
 
 
@@ -923,13 +923,13 @@ p.text-category-x {
             $('#neww').text("");
 
             location.reload();
-            
 
-            
+
+
         });
 
 
-       
+
 
 
 
@@ -939,7 +939,7 @@ p.text-category-x {
 
 
 
-      $('.Category_filter').click(function() { 
+      $('.Category_filter').click(function() {
 
         var $list = $('#data').empty();
 
@@ -953,7 +953,7 @@ p.text-category-x {
 
          '<p class="text-category-value">'+id+'</p>'+
 
-          
+
 
          '</div>';
 
@@ -961,11 +961,11 @@ p.text-category-x {
           $('#data').append(htmlString);
            return id;
         }).get();
-        
-    
+
+
      });
 
-     $('.Category_filterr').click(function() { 
+     $('.Category_filterr').click(function() {
 
         var $list = $('#dataa').empty();
 
@@ -979,7 +979,7 @@ p.text-category-x {
 
          '<p class="text-category-value">'+id+'</p>'+
 
-          
+
 
          '</div>';
 
@@ -987,12 +987,12 @@ p.text-category-x {
           $('#dataa').append(htmlString);
            return id;
         }).get();
-        
-    
+
+
      });
 
-     
-      $('.Available_filter').click(function() { 
+
+      $('.Available_filter').click(function() {
 
         var $list = $('#data').empty();
 
@@ -1006,7 +1006,7 @@ p.text-category-x {
 
          '<p class="text-category-value">'+id+'</p>'+
 
-         
+
 
          '</div>';
 
@@ -1014,11 +1014,11 @@ p.text-category-x {
           $('#data').append(htmlString);
            return id;
         }).get();
-        
-    
+
+
      });
 
-      $('.Available_filterr').click(function() { 
+      $('.Available_filterr').click(function() {
 
         var $list = $('#dataa').empty();
 
@@ -1032,7 +1032,7 @@ p.text-category-x {
 
          '<p class="text-category-value">'+id+'</p>'+
 
-         
+
 
          '</div>';
 
@@ -1040,13 +1040,13 @@ p.text-category-x {
           $('#dataa').append(htmlString);
            return id;
         }).get();
-        
-    
+
+
      });
 
 
-                       
-      $('.color_name').click(function() { 
+
+      $('.color_name').click(function() {
 
                 var $list = $('#data').empty();
 
@@ -1060,7 +1060,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                 
+
 
                        '</div>';
 
@@ -1072,7 +1072,7 @@ p.text-category-x {
 
         });
 
-        $('.color_namee').click(function() { 
+        $('.color_namee').click(function() {
 
                 var $list = $('#dataa').empty();
 
@@ -1086,7 +1086,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                 
+
 
                        '</div>';
 
@@ -1098,7 +1098,7 @@ p.text-category-x {
 
         });
 
-        $('.shape_filter').click(function() { 
+        $('.shape_filter').click(function() {
 
                 var $list = $('#data').empty();
 
@@ -1112,7 +1112,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                 
+
 
                        '</div>';
 
@@ -1124,7 +1124,7 @@ p.text-category-x {
 
         });
 
-        $('.shape_filterr').click(function() { 
+        $('.shape_filterr').click(function() {
 
                 var $list = $('#dataa').empty();
 
@@ -1138,7 +1138,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                 
+
 
                        '</div>';
 
@@ -1150,7 +1150,7 @@ p.text-category-x {
 
         });
 
-        $('.clarity_filter').click(function() { 
+        $('.clarity_filter').click(function() {
 
                 var $list = $('#data').empty();
 
@@ -1164,7 +1164,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                 
+
 
                        '</div>';
 
@@ -1176,7 +1176,7 @@ p.text-category-x {
 
          });
 
-         $('.clarity_filterr').click(function() { 
+         $('.clarity_filterr').click(function() {
 
                 var $list = $('#dataa').empty();
 
@@ -1190,7 +1190,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                 
+
 
                        '</div>';
 
@@ -1202,7 +1202,7 @@ p.text-category-x {
 
          });
 
-        $('.enhancement_filter').click(function() { 
+        $('.enhancement_filter').click(function() {
 
                 var $list = $('#data').empty();
 
@@ -1216,7 +1216,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                     
+
 
                        '</div>';
 
@@ -1229,7 +1229,7 @@ p.text-category-x {
         });
 
 
-        $('.enhancement_filterr').click(function() { 
+        $('.enhancement_filterr').click(function() {
 
                 var $list = $('#dataa').empty();
 
@@ -1243,7 +1243,7 @@ p.text-category-x {
 
                       '<p class="text-category-value">'+id+'</p>'+
 
-                     
+
 
                        '</div>';
 
@@ -1255,8 +1255,8 @@ p.text-category-x {
 
         });
 
-        
-        $('#weight_by').change(function() { 
+
+        $('#weight_by').change(function() {
 
                 var $list = $('#new').empty();
 
@@ -1283,7 +1283,7 @@ p.text-category-x {
 
                         '<p class="text-category-value">'+'CARAT WEIGHT: '+id+'</p>'+
 
-                      
+
 
                         '</div>';
 
@@ -1297,7 +1297,7 @@ p.text-category-x {
 
         });
 
-        $('#weight_byy').change(function() { 
+        $('#weight_byy').change(function() {
 
 var $list = $('#neww').empty();
 
@@ -1324,7 +1324,7 @@ var $list = $('#neww').empty();
 
         '<p class="text-category-value">'+'CARAT WEIGHT: '+id+'</p>';
 
-      
+
 
         '</div>';
 
@@ -1339,7 +1339,7 @@ var $list = $('#neww').empty();
 });
 
 
-        $('#select_by').change(function() { 
+        $('#select_by').change(function() {
 
 var $list = $('#short-new').empty();
 
@@ -1347,7 +1347,7 @@ var $list = $('#short-new').empty();
 
     var id = $(this).val();
 
-    
+
      var htmlString = "";
 
 
@@ -1367,7 +1367,7 @@ var $list = $('#short-new').empty();
 
         '<p class="text-category-value">'+'Sort by Weigh: Max to Min '+'</p>'+
 
-      
+
 
         '</div>';
 
@@ -1377,7 +1377,7 @@ var $list = $('#short-new').empty();
 
         '<p class="text-category-value">'+'Sort by Weigh: Min to Max '+'</p>'+
 
-      
+
 
         '</div>';
 
@@ -1391,7 +1391,7 @@ var $list = $('#short-new').empty();
 });
 
 
-       $('#select_byy').change(function() { 
+       $('#select_byy').change(function() {
 
 var $list = $('#short-neww').empty();
 
@@ -1399,7 +1399,7 @@ var $list = $('#short-neww').empty();
 
     var id = $(this).val();
 
-    
+
      var htmlString = "";
 
 
@@ -1419,7 +1419,7 @@ var $list = $('#short-neww').empty();
 
         '<p class="text-category-value">'+'Sort by Weigh: Max to Min '+'</p>'+
 
-      
+
 
         '</div>';
 
@@ -1429,7 +1429,7 @@ var $list = $('#short-neww').empty();
 
         '<p class="text-category-value">'+'Sort by Weigh: Min to Max '+'</p>'+
 
-      
+
 
         '</div>';
 
@@ -1445,9 +1445,6 @@ var $list = $('#short-neww').empty();
 
 
 
-        
-
-        
 
 
 
@@ -1456,26 +1453,29 @@ var $list = $('#short-neww').empty();
 
 
 
-     
-
-  
-
-    
-     
-     
-
-    
-
-
-  
-
-
-   
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
